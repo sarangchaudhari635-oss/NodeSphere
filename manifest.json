@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "NodeSphere",
+  "version": "0.1.0",
+  "description": "NodeSphere — Map your world of ideas",
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
+  "action": {
+    "default_popup": "src/extension/popup.html"
+  },
+  "background": {
+    "service_worker": "src/extension/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/extension/contentScript.js"]
+    }
+  ]
+}
