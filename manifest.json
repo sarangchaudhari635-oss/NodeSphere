@@ -5,15 +5,15 @@
   "description": "NodeSphere — Map your world of ideas",
   "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
   "action": {
-    "default_popup": "src/extension/popup.html"
+    "default_popup": "extension/popup.html"
   },
   "background": {
-    "service_worker": "src/extension/background.js"
+    "service_worker": "extension/background.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["src/extension/contentScript.js"]
+      "js": ["extension/contentScript.js"]
     }
   ]
 }
