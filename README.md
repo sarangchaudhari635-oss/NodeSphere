@@ -31,7 +31,7 @@ An AI-powered visual thinking and mind-mapping web application built with React,
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/sarangchaudhari635-oss/NodeSphere
 cd nodesphere
 ```
 
